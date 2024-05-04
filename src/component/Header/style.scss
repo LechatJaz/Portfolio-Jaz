@@ -1,0 +1,130 @@
+$fond: #23272E;
+
+
+.logo {
+    font-size: 2em;
+    margin-left: 1.5rem;
+
+    &-bracket-open {
+        color: white;
+    }
+
+    &-bracket-close {
+        color: #FFD700;
+    }
+
+    &-j {
+        color: #FFD700;
+        margin-left: .5rem;
+    }
+
+    &-a {
+        color: #FFD700;
+    }
+
+    &-z {
+        color: #FFD700;
+        margin-right: 1rem;
+    }
+
+    &-slash {
+        color: white;
+    }
+
+    &-bracket-close {
+        color: white;
+    }
+}
+
+.navbar {
+    display: flex;
+    background-color: #23272e11;
+    backdrop-filter: blur(1.5px);
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    max-height: 5rem;
+
+
+    gap: 10rem;
+
+    &-left {
+        margin-left: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1.3em;
+        color: white;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: sans-serif;
+
+
+        &:hover {
+            color: gray;
+        }
+    }
+
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+
+        div {
+            width: 2rem;
+            height: 0.25rem;
+            background-color: white;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+
+        .navbar-left {
+            order: 3;
+            display: none;
+        }
+
+        .burger-menu {
+            order: 1;
+            display: flex;
+
+        }
+
+        .navbar-right {
+            order: 2;
+
+        }
+
+        .navbar-center {
+            order: 4;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: $fond;
+            color: white;
+            z-index: 9999;
+            text-align: center;
+
+            &.show {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                background-color: $fond;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                padding: 0.5rem;
+            }
+        }
+    }
+}

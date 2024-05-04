@@ -1,0 +1,79 @@
+$fond: #23272E;
+
+html {
+    background-color: $fond;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.home {
+    // styles pour .home
+    background-image: url('../../assets/img/Jaz\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__background {
+        // styles pour .home__background
+        height: 99vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+
+
+
+    }
+
+    &__title {
+        color: white;
+        font-size: 10em;
+        font-weight: 700;
+        font-family: sans-serif;
+        letter-spacing: 5px;
+    }
+
+    &__subtitle {
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 5px;
+
+
+    }
+
+    &__arrow {
+        color: white;
+        font-size: 2em;
+        margin-top: 20px;
+        padding: 1rem;
+        animation: deplacerFleche 2s infinite;
+    }
+}
+
+@keyframes deplacerFleche {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    /* Modifier selon la distance souhaitée */
+    100% {
+        transform: translateX(0);
+    }
+}
