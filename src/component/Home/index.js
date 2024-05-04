@@ -48,6 +48,12 @@ export const Home = () => {
             bottom: '20px',
             right: '20px',
             zIndex: 1000,
+            backgroundColor: 'white',
+            border: 'none',
+            borderRadius: '50%',
+            padding: '10px 15px',
+            cursor: 'pointer',
+            fontSize: '20px',
           }}
         >
           ↑

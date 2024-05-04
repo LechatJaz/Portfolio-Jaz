@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <header>
-      <nav className="navbar">
+      <nav className="navbar navbar-fixed">
         <div className="navbar-left">
           <a href="/" className="logo-link">
             <p className="logo">
@@ -24,9 +24,11 @@ export const Header = () => {
         </div>
 
         <div className={`navbar-center ${menu ? 'show' : ''}`}>
-          <a href="/">Accueil</a>
-          <a href="/lessons">A propos de moi</a>
-          <a href="/contact">Projets</a>
+          <a href="#">Accueil</a>
+          <a href="#a-propos-de-moi">A propos de moi</a>
+          <a href="#competences">Compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div className="burger-menu" onClick={handleMenu}>

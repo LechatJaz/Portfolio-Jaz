@@ -16,6 +16,7 @@ h2 {
 
 }
 
+
 .home {
     // styles pour .home
     background-image: url('../../assets/img/Jaz\ \(1\).png');
@@ -75,5 +76,18 @@ h2 {
     /* Modifier selon la distance souhaitée */
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        &__title {
+            font-size: 5em;
+        }
+
+        &__subtitle {
+            font-size: 1.5em;
+            text-align: center;
+        }
     }
 }

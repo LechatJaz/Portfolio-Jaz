@@ -38,16 +38,20 @@ $fond: #23272E;
 
 .navbar {
     display: flex;
-    background-color: #23272e11;
-    backdrop-filter: blur(1.5px);
+    background-color: #23272e8f;
+    backdrop-filter: blur(3px);
     position: relative;
     align-items: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     z-index: 99999;
     max-height: 5rem;
-
-
     gap: 10rem;
+
+    &-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
     &-left {
         margin-left: 1rem;
@@ -88,6 +92,7 @@ $fond: #23272E;
     .navbar {
         flex-direction: row;
         align-items: center;
+        padding: 1rem;
 
         .navbar-left {
             order: 3;
