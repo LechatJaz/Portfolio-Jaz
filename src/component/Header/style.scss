@@ -121,6 +121,7 @@ $fond: #23272E;
             color: white;
             z-index: 9999;
             text-align: center;
+            display: none;
 
             &.show {
                 display: flex !important;
