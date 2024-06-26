@@ -88,7 +88,7 @@ $fond: #23272E;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 850px) {
     .navbar {
         flex-direction: row;
         align-items: center;
@@ -123,7 +123,7 @@ $fond: #23272E;
             text-align: center;
 
             &.show {
-                display: flex;
+                display: flex !important;
                 flex-direction: column;
                 gap: 0.5rem;
                 background-color: $fond;
