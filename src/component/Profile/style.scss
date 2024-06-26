@@ -100,8 +100,6 @@
 
 .skill-box:nth-child(1) h3::after {
     background-color: rgba(255, 0, 0, 0.5);
-
-
 }
 
 .skill-box:nth-child(2) h3::after {
@@ -140,7 +138,13 @@
 @media (max-width: 768px) {
     .skill-box {
         flex: 0 0 100%;
+
     }
+
+    .skill-box h3::after {
+        background-color: transparent !important;
+    }
+
 
     .section {
         &-title {
