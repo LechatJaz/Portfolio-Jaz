@@ -19,10 +19,11 @@ h2 {
 
 .home {
     // styles pour .home
-    background-image: url('../../assets/img/Jaz\ \(1\).png');
+    background-image: url('../../assets/img/fond.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     &__background {
         // styles pour .home__background
@@ -32,9 +33,6 @@ h2 {
         align-items: center;
         flex-direction: column;
         gap: 0.5rem;
-
-
-
     }
 
     &__title {

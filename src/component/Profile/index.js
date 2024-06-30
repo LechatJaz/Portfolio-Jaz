@@ -6,7 +6,7 @@ import './style.scss';
 export const Profile = () => {
   return (
     <div className="profile">
-      <section className="profile-section">
+      <section className="profile-section" data-aos="fade-left">
         <h2 className="section-title" id="a-propos-de-moi">
           À propos de moi
         </h2>
@@ -23,7 +23,7 @@ export const Profile = () => {
           matière de sécurité et de confidentialité des données.
         </p>
       </section>
-      <section className="profile-section">
+      <section className="profile-section" data-aos="fade-right">
         <h2 className="section-title" id="competences">
           Compétences
         </h2>
@@ -76,7 +76,7 @@ export const Profile = () => {
           </div>
         </div>
       </section>
-      <section className="profile-section">
+      <section className="profile-section" data-aos="fade-left">
         <h2 className="section-title" id="projets">
           Projets
         </h2>
@@ -88,7 +88,7 @@ export const Profile = () => {
           </article>
         </div>
       </section>
-      <section className="profile-section">
+      <section className="profile-section" data-aos="fade-right">
         <h2 className="section-title" id="contact">
           Contact
         </h2>
