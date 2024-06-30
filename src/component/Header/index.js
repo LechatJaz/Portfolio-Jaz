@@ -1,14 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './style.scss';
 export const Header = () => {
   const [menu, setMenu] = useState(false);
-
+  const menuRef = useRef();
   const handleMenu = () => {
     setMenu(!menu);
   };
 
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menu]);
+
   return (
-    <header>
+    <header ref={menuRef}>
       <nav className="navbar navbar-fixed">
         <div className="navbar-left">
           <a href="/" className="logo-link">
