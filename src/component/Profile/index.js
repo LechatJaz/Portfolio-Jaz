@@ -15,7 +15,7 @@ export const Profile = () => {
           JavaScript, HTML, CSS(Sass) et React.js. je commence ma carrière,
           J'aime Résoudre des problèmes, une attention aux détails et une
           passion pour l'apprentissage continu. Mon objectif professionnel à
-          court terme est d'apprebdre encore et encore, À long terme, j'aimerais
+          court terme est d'apprendre encore et encore, À long terme, j'aimerais
           évoluer vers un rôle de gestion de projet où je pourrais utiliser mes
           compétences techniques pour diriger une équipe de développeurs. Enfin,
           je crois fermement en l'importance de l'éthique dans le développement
