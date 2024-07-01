@@ -38,6 +38,7 @@ $fond: #23272E;
 
 .navbar {
     display: flex;
+    justify-content: space-around;
     background-color: #23272e8f;
     backdrop-filter: blur(3px);
     position: relative;
@@ -45,7 +46,7 @@ $fond: #23272E;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     z-index: 99999;
     max-height: 5rem;
-    gap: 10rem;
+    gap: 28rem;
 
     &-fixed {
         position: fixed;
@@ -54,8 +55,9 @@ $fond: #23272E;
     }
 
     &-left {
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
+
 
     a {
         text-decoration: none;
@@ -88,10 +90,25 @@ $fond: #23272E;
     }
 }
 
+@media (max-width: 1800px) {
+    .navbar {
+        gap: 10rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .navbar {
+        gap: 6rem;
+    }
+
+}
+
 @media (max-width: 1000px) {
     .navbar {
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         padding: 1rem;
 
         .navbar-left {
@@ -107,6 +124,8 @@ $fond: #23272E;
 
         .navbar-right {
             order: 2;
+            margin-right: 1.5rem;
+            ;
 
         }
 
@@ -132,5 +151,11 @@ $fond: #23272E;
                 padding: 0.5rem;
             }
         }
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar {
+        gap: 10rem;
     }
 }

@@ -94,9 +94,14 @@ export const Profile = () => {
         </h2>
         <p className="section-text">
           N'hésitez pas à me contacter pour toute question ou opportunité. Vous
-          pouvez m'envoyer un email à [votre email] ou me suivre sur LinkedIn.
+          pouvez m'envoyer un email à{' '}
+          <strong className="section-strong">
+            cordiercorentinpro@gmail.com
+          </strong>{' '}
+          ou me suivre sur LinkedIn.
         </p>
       </section>
     </div>
   );
 };
+<strong></strong>;

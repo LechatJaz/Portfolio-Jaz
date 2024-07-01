@@ -1,5 +1,8 @@
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
 import './style.scss';
+
 export const Header = () => {
   const [menu, setMenu] = useState(false);
   const menuRef = useRef();
@@ -51,6 +54,14 @@ export const Header = () => {
           </a>
           <a href="#contact" onClick={handleMenu}>
             Contact
+          </a>
+        </div>
+        <div className="navbar-right">
+          <a
+            target="blank"
+            href="https://fr.linkedin.com/in/corentin-cordier-1955a327b?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" color="white" />
           </a>
         </div>
 
