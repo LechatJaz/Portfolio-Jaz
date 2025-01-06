@@ -5,7 +5,7 @@ import { Profile } from '../Profile/index';
 import './style.scss';
 export const Home = () => {
   return (
-    <div>
+    <div className="home-content">
       <div className="home">
         <Header className="home__header" />
         <div className="home__content">

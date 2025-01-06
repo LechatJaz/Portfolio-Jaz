@@ -1,6 +1,5 @@
 $fond: #23272E;
 
-
 .logo {
     font-size: 2em;
     margin-left: 1.5rem;
@@ -58,7 +57,6 @@ $fond: #23272E;
         margin-right: 1rem;
     }
 
-
     a {
         text-decoration: none;
         margin: 0 10px;
@@ -67,7 +65,6 @@ $fond: #23272E;
         line-height: 1.5;
         text-align: justify;
         font-family: sans-serif;
-
 
         &:hover {
             color: gray;
@@ -94,14 +91,12 @@ $fond: #23272E;
     .navbar {
         gap: 10rem;
     }
-
 }
 
 @media (max-width: 1300px) {
     .navbar {
         gap: 6rem;
     }
-
 }
 
 @media (max-width: 1000px) {
@@ -119,14 +114,11 @@ $fond: #23272E;
         .burger-menu {
             order: 1;
             display: flex;
-
         }
 
         .navbar-right {
             order: 2;
-            margin-right: 2rem;
-            ;
-
+            margin-right: 3rem;
         }
 
         .navbar-center {
@@ -156,6 +148,10 @@ $fond: #23272E;
 
 @media (max-width: 560px) {
     .navbar {
-        gap: 10rem;
+        gap: 2rem;
+    }
+
+    .navbar-right {
+        margin-right: 1rem;
     }
 }

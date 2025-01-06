@@ -1,7 +1,7 @@
 .profile {
     width: 80%;
-    margin: auto;
     padding: 20px;
+    margin: auto;
 }
 
 .profile-section {
@@ -148,6 +148,11 @@
 
 
 @media (max-width: 768px) {
+    .profile {
+        max-width: 65%;
+        width: 65%;
+    }
+
     .skill-box {
         flex: 0 0 100%;
 
