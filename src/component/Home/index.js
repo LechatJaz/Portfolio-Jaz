@@ -16,7 +16,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <Profile />
+      <div className="profile-container">
+        <Profile />
+      </div>
     </div>
   );
 };

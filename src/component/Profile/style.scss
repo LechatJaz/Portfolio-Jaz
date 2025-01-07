@@ -1,7 +1,11 @@
 .profile {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     margin: auto;
+}
+
+.body {
+    overflow-x: hidden !important;
 }
 
 .profile-section {
